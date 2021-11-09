@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import IdCard from './IdCard';
+import Greetings from './Greetings';
+import BoxColor from './BoxColor';
 
 function App() {
   return (
@@ -21,7 +23,11 @@ function App() {
           birth={new Date("1988-05-11")}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-    </div>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
+        </div>
   );
 }
 

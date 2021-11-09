@@ -1,5 +1,3 @@
-
-
 function IdCard(props) {
     return (
         <div className="container">
