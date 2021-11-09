@@ -5,7 +5,6 @@ import IdCard from './IdCard';
 function App() {
   return (
     <div className="App">
-      <IdCard />
       <IdCard
         lastName='Doe'
         firstName='John'
