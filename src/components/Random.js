@@ -1,13 +1,8 @@
-/*
-<Random min={1} max={6}/>
-<Random min={1} max={100}/>
-*/
-
 function Random(props) {
-    
     return (
         <div>
-            <p>Random value between {props.min} and {props.max}</p>
+            
+            <p>Random value between {props.min} and {props.max} {"=>"} {Math.floor((Math.random() * props.max) + props.min)}</p>
         </div>
 
     )

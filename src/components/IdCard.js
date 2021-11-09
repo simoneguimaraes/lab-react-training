@@ -9,7 +9,7 @@ function IdCard(props) {
                 <p>Last Name: <span>{props.lastName}</span></p>
                 <p>Gender: <span>{props.gender}</span></p>
                 <p>Height: <span>{props.height}</span></p>
-                {/* <p>Birth: <span>{props.birth.toLocaleDateString("en-us")}</span></p> */}
+                <p>Birth: <span>{props.birth.toLocaleDateString("en-us")}</span></p>
             </div>
 
         </div>
