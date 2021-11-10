@@ -1,16 +1,21 @@
-//Create a component ClickablePicture that displays a picture 
-//and toggle to the next picture on click.
-
 import { useState } from "react";
 
-function ClickablePicture() {
+function ClickablePicture(props) {
     
+    const [oldPicture, setNewPicture] = useState(true);
+
+    function handleClick() {
+        setNewPicture(!oldPicture);
+    }
+
+
     return(
-        <div>
-            <img src={}/>
+        <div onClick={handleClick}>
+            {oldPicture ? <img src={props.img}/> : <img src={props.imgClicked}/>}
         </div>
     )
 }
 
-
 export default ClickablePicture;
+
+// não está aparecendo a imagem
