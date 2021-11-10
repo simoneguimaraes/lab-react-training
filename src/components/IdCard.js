@@ -1,6 +1,6 @@
 function IdCard(props) {
     return (
-        <div className="container">
+        <div className="container" style={{border: '1px solid black'}}>
             <div className="imagem">
                <img src={props.picture} alt="foto do cliente" /> 
             </div>

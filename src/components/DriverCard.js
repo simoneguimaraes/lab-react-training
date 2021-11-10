@@ -15,7 +15,7 @@ function DriverCard(props) {
         }
     }
     return(
-        <div>
+        <div style={{border: '1px solid black'}}>
             <img src={props.img} style={{width: '100px'}} />
             <span>{props.name}</span>
             <span>{createStars(Math.round(props.rating))}</span>
