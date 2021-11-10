@@ -11,6 +11,10 @@ import LikeButton from './LikeButton';
 import ClickablePicture from './ClickablePicture';
 import Dice from './Dice';
 import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
+import FaceBook from './FaceBook';
+import SignupPage from './SignupPage';
+import RGBColorPicker from './RGBColorPicker';
 
 function App() {
   return (
@@ -105,6 +109,10 @@ function App() {
             'https://randomuser.me/api/portraits/men/2.jpg'
           ]}
         />
+        <NumbersTable limit={12} />
+        <FaceBook />
+        <SignupPage />
+        <RGBColorPicker />
 
         </div>
   );

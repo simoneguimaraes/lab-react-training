@@ -17,5 +17,3 @@ function ClickablePicture(props) {
 }
 
 export default ClickablePicture;
-
-// não está aparecendo a imagem
