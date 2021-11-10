@@ -8,10 +8,13 @@ function LikeButton() {
     }
     return(
         <div>
-            <button onClick={increaseLikes} style={{backgroundColor: ['purple','blue','green','yellow','orange','red']}}>{clickCount} Likes</button>
+            <button onClick={increaseLikes}>{clickCount} Likes</button>
+            
         </div>
     )
 }
 
 
 export default LikeButton;
+
+/* style={{backgroundColor: ['purple','blue','green','yellow','orange','red'] */

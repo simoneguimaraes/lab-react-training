@@ -8,6 +8,7 @@ import CreditCard from './CreditCard';
 import Rating from './Rating';
 import DriverCard from './DriverCard';
 import LikeButton from './LikeButton';
+import ClickablePicture from './ClickablePicture';
 
 function App() {
   return (
