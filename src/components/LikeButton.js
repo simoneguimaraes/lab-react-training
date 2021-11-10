@@ -16,5 +16,5 @@ function LikeButton() {
 
 
 export default LikeButton;
-
+//usar o state para trocar a cor
 /* style={{backgroundColor: ['purple','blue','green','yellow','orange','red'] */
