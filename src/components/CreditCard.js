@@ -4,19 +4,20 @@ import visa from './img/visa.png'
 function CreditCard(props) {
     function creditCardType(brand) {
         if (brand === 'Visa') {
-            return `{<img src={visa}/>}`
+            return <img src={visa} style={{width: '50px'}}/>
         } else {
-            return `{<img src={mastercard}/>}`
+            return <img src={mastercard} style={{width: '50px'}}/>
         }
     }
     return(
         <div>
-            <span>{creditCardType(props.type)}</span>
-            <span>**** **** **** {props.number.split('').slice(12).join('')}</span>
-            <span>Expires {props.expirationMonth.toString().padStart(2, '0')}/{props.expirationYear.toString().split("").splice(2,2).join("")}</span>
-            <span>{props.bank}</span>
-            <span>{props.owner}</span>
-            <span style={{ backgroundColor: props.bgColor, color: props.color, height: '100px', width: '400px'}}></span>
+            <div style={{ backgroundColor: props.bgColor, color: props.color, height: '150px', width: '300px'}}>
+                <p>{creditCardType(props.type)}</p>
+                <p>**** **** **** {props.number.split('').slice(12).join('')}</p>
+                <span>Expires {props.expirationMonth.toString().padStart(2, '0')}/{props.expirationYear.toString().split("").splice(2,2).join("")}</span>
+                <span>{props.bank}</span>
+                <p>{props.owner}</p>
+            </div>
         </div>
        
     )
