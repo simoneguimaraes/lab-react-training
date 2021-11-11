@@ -111,8 +111,9 @@ function App() {
           ]}
         />
         <NumbersTable limit={12} />
-        {/* <FaceBook />
+        <FaceBook />
         <FaceBookCard />
+        {/* 
         <SignupPage />
         <RGBColorPicker /> */}
 

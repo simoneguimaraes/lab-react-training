@@ -10,7 +10,7 @@ function NumbersTable(props) {
     return(
         <div>
             {numbersArr.map((currentNumber) => {
-              return  <span style={{border: '1px solid black'}}>{currentNumber}</span>})}
+              return <span style={{border: '1px solid black'}}>{currentNumber}</span>})}
         </div>
     )
 }
