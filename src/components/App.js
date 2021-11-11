@@ -13,10 +13,11 @@ import Dice from './Dice';
 import Carousel from './Carousel';
 import NumbersTable from './NumbersTable';
 import FaceBook from './FaceBook';
+import FaceBookCard from './FaceBookCard';
 import SignupPage from './SignupPage';
 import RGBColorPicker from './RGBColorPicker';
 
-function App() {
+function App() {  
   return (
     <div className="App">
         <IdCard
@@ -111,6 +112,7 @@ function App() {
         />
         <NumbersTable limit={12} />
         <FaceBook />
+        <FaceBookCard />
         <SignupPage />
         <RGBColorPicker />
 

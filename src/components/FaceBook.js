@@ -1,22 +1,17 @@
-import { useState } from "react";
 import profiles from '../data/berlin.json';
+import FaceBookCard from './FaceBookCard';
 
-
-function FaceBook() {
-    
+function FaceBook(props) {
     return(
         <div>
-            
+            {profiles.map((currentCard) => {
+                return(
+                <img src={currentCard.img} alt={currentCard.name} />
+                )
+            })}
         </div>
     )
 }
 
 
 export default FaceBook;
-
-/*
-Create a FaceBook component that displays the list of all profiles from src/data/berlin.json. 
-You will probably have to write:
-import profiles from './data/berlin.json';
-
-*/
