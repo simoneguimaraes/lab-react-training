@@ -1,20 +1,19 @@
-import { useState } from "react";
+function NumbersTable(props) {
+    let numbersArr =[]
 
-function NumbersTable() {
-    
+    function createNumbers() {
+        for(let i = 1; i <= props.limit; i++) {
+            numbersArr.push(i)
+        }
+    }
+    createNumbers()
     return(
         <div>
-            
+            {numbersArr.map((currentNumber) => {
+              return  <span style={{border: '1px solid black'}}>{currentNumber}</span>})}
         </div>
     )
 }
 
 
 export default NumbersTable;
-
-/*
-Create a NumbersTable component that displays a list of numbers 
-between 1 and a limit. Even numbers must be red.
-It takes 1 prop:
-limit: A number.
-*/

@@ -12,10 +12,10 @@ import ClickablePicture from './ClickablePicture';
 import Dice from './Dice';
 import Carousel from './Carousel';
 import NumbersTable from './NumbersTable';
-import FaceBook from './FaceBook';
-import FaceBookCard from './FaceBookCard';
-import SignupPage from './SignupPage';
-import RGBColorPicker from './RGBColorPicker';
+// import FaceBook from './FaceBook';
+// import FaceBookCard from './FaceBookCard';
+// import SignupPage from './SignupPage';
+// import RGBColorPicker from './RGBColorPicker';
 
 function App() {  
   return (
@@ -111,10 +111,10 @@ function App() {
           ]}
         />
         <NumbersTable limit={12} />
-        <FaceBook />
+        {/* <FaceBook />
         <FaceBookCard />
         <SignupPage />
-        <RGBColorPicker />
+        <RGBColorPicker /> */}
 
         </div>
   );
